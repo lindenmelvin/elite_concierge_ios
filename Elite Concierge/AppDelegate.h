@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "User.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+    User *currentUser;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
