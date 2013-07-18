@@ -32,7 +32,6 @@
     NSInteger count = [context countForFetchRequest:request error:&error];
     
     if (!error){
-        NSLog(@"count: %i", count);
         
         if( count == 1) {
             NSArray *results = [context executeFetchRequest:request error:&error];

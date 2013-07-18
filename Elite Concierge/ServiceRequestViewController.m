@@ -85,9 +85,11 @@
     NSURL *url = [NSURL URLWithString:@"http://elite-concierge.herokuapp.com/service_requests"];
     AFHTTPClient *httpClient = [[AFHTTPClient alloc]initWithBaseURL:url];
     NSDictionary *params = [[NSDictionary alloc]initWithObjectsAndKeys:
-                            subject,@"service_request[subject]",
+                            @"1",@"service_request[category_id]",
+                            @"1",@"service_request[status_id]",
                             body,@"service_request[body]",
                             currentUser.authentication_token,@"auth_token",
+                            
                             nil];
     NSMutableURLRequest *request = [httpClient requestWithMethod:@"POST" path:fullPath parameters:params];
     
@@ -95,6 +97,13 @@
         success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
             NSLog(@"success");
             [spinner stopAnimating];
+            UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Service Request Submitted!"
+                                                              message:@"Someone will contact you soon."
+                                                             delegate:nil
+                                                    cancelButtonTitle:@"OK"
+                                                    otherButtonTitles:nil];
+            [message show];
+            [self.navigationController popViewControllerAnimated:YES];
         }
                                          
         failure:^(NSURLRequest *request , NSURLResponse *response , NSError *error , id JSON) {

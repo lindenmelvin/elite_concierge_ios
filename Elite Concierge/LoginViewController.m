@@ -17,8 +17,8 @@
 - (IBAction)login:(UIButton *)sender {
     NSString *email = emailField.text;
     NSString *password = passwordField.text;
-        
-    if([email isEqualToString:@""] || [password isEqualToString:@""]) {
+    
+    if(email.length == 0 || password.length == 0) {
         UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Invalid Credentials"
                                                           message:@"You must provide an email and password."
                                                          delegate:nil
@@ -112,9 +112,9 @@
     User *user = [NSEntityDescription insertNewObjectForEntityForName:@"User" inManagedObjectContext:context];
     user.email = [userData valueForKey:@"email"];
     user.authentication_token = [userData valueForKey:@"authentication_token"];
+    user.first_name = [userData valueForKey:@"first_name"];
+    user.last_name = [userData valueForKey:@"last_name"];
     user.logged_in = @YES;
-    
-    NSLog(@"%@", user);
     
     NSError *error;
     

@@ -60,7 +60,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    welcome.text = currentUser.email;
+    NSArray *welcome_message = [[NSArray alloc] initWithObjects:@"Welcome, ", currentUser.first_name, currentUser.last_name, nil];
+    welcome.text = [welcome_message componentsJoinedByString:@" "];
 }
 
 -(void)viewWillAppear:(BOOL)animated {

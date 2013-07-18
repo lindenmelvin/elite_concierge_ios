@@ -14,5 +14,7 @@
 @dynamic email;
 @dynamic authentication_token;
 @dynamic logged_in;
+@dynamic first_name;
+@dynamic last_name;
 
 @end
