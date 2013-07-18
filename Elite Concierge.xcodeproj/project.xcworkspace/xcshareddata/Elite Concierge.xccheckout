@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>531C8C7B-A0C2-48E0-9200-15C93804977E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Elite Concierge</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4B89B973-D190-45A6-BD04-54BCE03F57C0</key>
+		<string>ssh://github.com/lindenmelvin/elite_concierge_ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Elite Concierge.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4B89B973-D190-45A6-BD04-54BCE03F57C0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/lindenmelvin/elite_concierge_ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4B89B973-D190-45A6-BD04-54BCE03F57C0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4B89B973-D190-45A6-BD04-54BCE03F57C0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Elite Concierge</string>
+		</dict>
+	</array>
+</dict>
+</plist>
